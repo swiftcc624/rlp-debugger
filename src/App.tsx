@@ -93,6 +93,7 @@ class App extends React.Component<{}, AppState> {
     let encodeButton: any;
     let encodedText: any;
     let plain = value;
+    console.log("plain", plain);
 
     // Change the source of truth only when a change is valid
     if (!disabled) {
@@ -101,6 +102,7 @@ class App extends React.Component<{}, AppState> {
       }
 
       try {
+        console.log("plain", plain);
         encodedText = RLP.encode(plain).toString("hex");
 
         this.setState({
@@ -147,6 +149,7 @@ class App extends React.Component<{}, AppState> {
 
   public render() {
     let body;
+    console.log(555, this.state.plainText);
     if (this.state.mode === "encoded") {
       body = (
         <div className="App-body">

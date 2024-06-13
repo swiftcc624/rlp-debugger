@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
-import "./Footer.scss";
 import logo from "./img/CodechainLogo_White.svg";
 import github from "./img/github.svg";
 import gitter from "./img/gitter.svg";
